@@ -1,6 +1,36 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+    boton: {
+        backgroundColor: '#2D2D2D',
+        borderRadius: 100,
+        justifyContent: 'center',
+        height: 80,
+        width: 80,
+        marginHorizontal: 5
+    },
+    botonTexto: {
+        color: 'white',
+        fontSize: 30,
+        fontWeight: '500',
+        padding: 10,
+        textAlign: 'center'
+    },
+    botonNaranja: {
+        backgroundColor: '#FF9427' 
+    },
+    botonGrisOscuro: {
+        backgroundColor: '#2D2D2D'
+    },
+    botonGrisClaro: {
+        backgroundColor: '#2D2D2D' 
+    },
+    fila: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        marginBottom: 10,
+        paddingHorizontal: 10
+    },
     fondo: {
         backgroundColor: 'black',
         flex: 1
