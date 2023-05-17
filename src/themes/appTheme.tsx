@@ -16,15 +16,6 @@ const styles = StyleSheet.create({
         padding: 10,
         textAlign: 'center'
     },
-    botonNaranja: {
-        backgroundColor: '#FF9427' 
-    },
-    botonGrisOscuro: {
-        backgroundColor: '#2D2D2D'
-    },
-    botonGrisClaro: {
-        backgroundColor: '#2D2D2D' 
-    },
     fila: {
         flexDirection: 'row',
         justifyContent: 'center',

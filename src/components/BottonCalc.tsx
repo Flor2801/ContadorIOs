@@ -1,27 +1,26 @@
 import React from 'react'
-import { Text, View, StyleSheet, BackHandler} from 'react-native'
+import { Text, View, StyleSheet, BackHandler, ImageBackground} from 'react-native'
 import styles from '../themes/appTheme'
 
 interface Props {
-    texto: string,
-    color: string
+    texto: string
+    color?: string
+    ancho?: boolean
 }
 
-const BotonCalc = ({ texto, color }: Props) => {
+const BotonCalc = ({ texto, color = '#2D2D2D', ancho }: Props) => {
     return (
-        <View style={ styles.boton }>
-            <Text style={ [styles.botonTexto] }>{texto}</Text>
+        <View style={{
+            ...styles.boton,
+            backgroundColor: color,
+            width: ( ancho === true ) ? 180 : 80
+            }}>
+            <Text style={{
+            ...styles.botonTexto,
+            color: ( color === '#9B9B9B' ) ? 'black' : 'white'
+            }}>{texto}</Text>
         </View>
     )
 }
-
-// const styles = StyleSheet.create({
-//     gris: {
-//         color: '#2D2D2D',
-//     },
-//     naranja: {
-//         color: '#FF9427'
-//     }
-// })
 
 export default BotonCalc
